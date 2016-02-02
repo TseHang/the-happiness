@@ -78,13 +78,16 @@ Reveal.addEventListener( 'slidechanged', function( event ) {
   if (x == 7){
     $('#box-top').css("display","block");
     $('#box-bottom').css("display","block");
-    $('#back_intro').css("display", "none")
+    $('#back_intro').css("display", "none");
 
     $("#p7_2").delay(900).fadeTo("slow" , 1) ;
   }
   if (x == 8){
-    $('#box-top').css("display","block");
-    $('#box-bottom').css("display","block");
+    $('#box-top').css("display","none");
+    $('#box-bottom').css("display","none");
+    $('#back_intro').css("display", "none");
+
+    $('#p7_2').css("opacity",0);
   }
   if (x == 9){
     chart_suicide() ;
