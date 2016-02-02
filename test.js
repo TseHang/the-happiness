@@ -110,6 +110,7 @@ Reveal.addEventListener( 'slidechanged', function( event ) {
 
   }
   if (x == 12){
+    chart_suicide();
     $('#box-top').css("display","block");
     $('#box-bottom').css("display","block");
 
@@ -117,48 +118,67 @@ Reveal.addEventListener( 'slidechanged', function( event ) {
     
   }
   if (x == 13){
-    $('#box-top').css("display","block");
-    $('#box-bottom').css("display","block");
+    $('#box-top').css("display","none");
+    $('#box-bottom').css("display","none");
 
-    $("#p12_3").css("opacity" , 0) ;
+    $("#p14_sub").css("opacity" , 0) ;
     
   }
   if (x == 14){
     $('#box-top').css("display","block");
     $('#box-bottom').css("display","block");
 
-    $("#p15_2").css("opacity" , 0) ;
+    $('#p14_sub').delay(1000).fadeTo("slow",1);
+    $("#p15_sub").css("opacity",0) ;
     
   }
   if (x == 15){
     $('#box-top').css("display","block");
     $('#box-bottom').css("display","block");
 
-    $("#p15_2").delay(700).fadeTo("slow",1) ;
+    $("#p14_sub").css("opacity" , 0) ;
+    $("#p15_sub").delay(700).fadeTo("slow",1) ;
+    $('#p16_3').css("opacity",0);
     
   }
   if (x == 16){
     $('#box-top').css("display","block");
     $('#box-bottom').css("display","block");
 
-    $("#p15_2").css("opacity" , 0) ;
-    $("#p17_2").css("opacity" , 0) ;
+    $("#p15_sub").css("opacity",0) ;
+    $("#p16_3").delay(1000).fadeTo("slow",1) ;
   }
   if (x == 17){
-    $('#box-top').css("display","none");
-    $('#box-bottom').css("display","none");
-
-    $('#p17_2').delay(700).fadeTo("slow" , 1);
-  }
-  if ( x == 18){
-    chart_GDP_highlight() ;
-
     $('#box-top').css("display","block");
     $('#box-bottom').css("display","block");
 
-
-
+    $('#p16_3').css("opacity",0);
   }
+  if ( x == 18){
+    $('#box-top').css("display","block");
+    $('#box-bottom').css("display","block");
+
+    $('#p19_2').css("opacity",0);
+  }
+  if ( x == 19){
+    $('#box-top').css("display","block");
+    $('#box-bottom').css("display","block");
+
+    $('#p19_2').delay(900).fadeTo("slow",1);
+  }
+  if ( x == 20){
+    $('#box-top').css("display","block");
+    $('#box-bottom').css("display","block");
+
+    $('#p21_2').css("opacity",0);
+  }
+  if ( x == 21){
+    $('#box-top').css("display","block");
+    $('#box-bottom').css("display","block");
+
+    $('#p21_2').delay(700).fadeTo("slow",1);
+  }
+
 });
 
 // total data
@@ -698,7 +718,7 @@ function chart_suicide(){
     "titles": [
       {
         "size": 23,
-        "text": "這是...自殺率...？ 好像有點混亂了..."
+        "text": "看看南韓的自殺率...這些數字又代表什麼含意...？"
       }
     ],
     "dataProvider": totalData
