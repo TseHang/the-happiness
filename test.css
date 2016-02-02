@@ -83,10 +83,8 @@
 	color:rgba(244,247,180,1);
 	font-size: 1.6em;
 }
-#back_4{
-	color:white;
-}
 #p4{
+	color:white;
 	font-size:1.6em;
 	position: relative;
 	top:3.4em;
@@ -95,12 +93,14 @@
 	border-bottom: solid 2px rgba(244,247,180,1);
 }
 #p4_2{
+	color:white;
 	font-size:0.7em;
 	position: relative;
 	top:8em;
 	left:-9em;
 }
 #p5{
+	color:white;
 	font-size:0.7em;
 	position: relative;
 	top:10em;

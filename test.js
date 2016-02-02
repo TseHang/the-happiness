@@ -128,7 +128,7 @@ Reveal.addEventListener( 'slidechanged', function( event ) {
     $('#box-top').css("display","block");
     $('#box-bottom').css("display","block");
 
-    $('#p14_sub').delay(1000).fadeTo("slow",1);
+    $('#p14_sub').delay(900).fadeTo("slow",1);
     $("#p15_sub").css("opacity",0) ;
     
   }
@@ -173,8 +173,8 @@ Reveal.addEventListener( 'slidechanged', function( event ) {
     $('#p21_2').css("opacity",0);
   }
   if ( x == 21){
-    $('#box-top').css("display","block");
-    $('#box-bottom').css("display","block");
+    $('#box-top').css("display","none");
+    $('#box-bottom').css("display","none");
 
     $('#p21_2').delay(700).fadeTo("slow",1);
   }
