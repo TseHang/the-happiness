@@ -90,32 +90,30 @@ Reveal.addEventListener( 'slidechanged', function( event ) {
     $('#p7_2').css("opacity",0);
   }
   if (x == 9){
-    chart_suicide() ;
-
     $('#box-top').css("display","block");
     $('#box-bottom').css("display","block");
 
-    $("#p10_2").css("opacity" , 0) ;
   }
   if (x == 10){
+    chart_life();
+
     $('#box-top').css("display","block");
     $('#box-bottom').css("display","block");
 
-    $('#p10_2').delay(700).fadeTo("slow",1) ;
+    $("#p11_2").css("opacity",0) ;
   }
   if (x == 11){
     $('#box-top').css("display","block");
     $('#box-bottom').css("display","block");
 
-    $("#p10_2").css("opacity" , 0) ;
-    $("#p12_3").css("opacity" , 0) ;
+    $("#p11_2").delay(900).fadeTo("slow",1) ;
 
   }
   if (x == 12){
     $('#box-top').css("display","block");
     $('#box-bottom').css("display","block");
 
-    $("#p12_3").delay(900).fadeTo("slow",1) ;
+    $("#p11_2").css("opacity",0) ;
     
   }
   if (x == 13){
@@ -409,7 +407,7 @@ function chart_happy(){
         "type": "column",
         "valueField": "index",
         "cornerRadiusTop": 3,
-        "fillAlphas": 0.8,
+        "fillAlphas": 1,
         "balloonText": "Value:[[value]] , World rank:[[rank]] ",
         "visibleInLegend": false,
       }
@@ -485,7 +483,7 @@ function chart_GDP(){
         "type": "column",
         "valueField": "index",
         "cornerRadiusTop": 3,
-        "fillAlphas": 0.7,
+        "fillAlphas": 0.8,
         "balloonText": "Value:[[value]] , Rank:[[rank]] ",
         "legendValueText": "[[value]] / [[rank]] (Global)",
         "legendPeriodValueText": "滑動滑鼠取得詳細資訊"
@@ -517,7 +515,7 @@ function chart_GDP(){
     "titles": [
       {
         "size": 23,
-        "text": "有些國家的GDP卻沒有想像中的高...?"
+        "text": "可是 有些國家的GDP卻沒有想像中的高...?"
       }
     ],
     "dataProvider": totalData
@@ -558,13 +556,6 @@ function chart_life(){
       "fontSize": 14,
       "title": "幸福指數(綜合分數)",
     },{
-      "id": "gdpAxis",
-      "axisAlpha": 0,
-      "gridAlpha": 0,
-      "position": "right",
-      "fontSize": 14,
-      "labelsEnabled": false,
-    },{
       "id": "lifeAxis",
       "axisAlpha": 0,
       "gridAlpha": 0,
@@ -585,25 +576,11 @@ function chart_life(){
         "type": "column",
         "valueField": "index",
         "cornerRadiusTop": 3,
-        "fillAlphas": 0.7,
+        "fillAlphas": 0.8,
         "balloonText": "Value:[[value]] , Rank:[[rank]] ",
         "legendValueText": "[[value]] / [[rank]] (Global)",
         "legendPeriodValueText": "滑動滑鼠取得詳細資訊"
       },{
-        "bullet": "round",
-        "bulletBorderAlpha": 1,
-        "useLineColorForBulletBorder": true,
-        "bulletColor": "#FFFFFF",
-        "bulletSizeField": "GDP/1500",
-        "labelPosition": "right",
-        "title": "GDP(人均)",
-        "fillAlphas": 0,
-        "valueField": "GDP",
-        "valueAxis": "gdpAxis",
-        "balloonText": "[[value]] 美元/年",
-        "legendValueText": "[[value]] 美元/年",
-        "legendPeriodValueText": "滑動滑鼠取得詳細資訊"
-      }, {
         "bullet": "square",
         "bulletBorderAlpha": 1,
         "bulletBorderThickness": 1,
@@ -629,7 +606,7 @@ function chart_life(){
     "titles": [
       {
         "size": 23,
-        "text": "活得越久 應該越幸福..吧...?"
+        "text": "可是日本的預期壽命卻遠高於其他國家...?"
       }
     ],
     "dataProvider": totalData
