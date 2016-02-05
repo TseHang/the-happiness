@@ -37,12 +37,14 @@
 	border-radius: 20px;
 }
 #p0{
+	position: relative;
 	font-weight: 900;
 	font-size: 2.5em;
+	top:0.5em;
 }
 #p0_2{
 	position: relative;
-	top:-0.6em;
+	top:0.6em;
 	left:0.6em;
 	border-radius: 20px;
 	font-weight: 700;
@@ -57,9 +59,20 @@
 	font-weight: 100;
 	font-size: 0.6em;
 	left:23em;
-	top:17em;
+	top:18em;
 	border-radius: 10px;
 	width:50em;
+}
+#p0_amcharts{
+	position: relative;
+	background-color: rgba(30, 50 , 30 , 0.4);
+	color:white;
+	font-weight: 100;
+	font-size: 0.6em;
+	left:58em;
+	top:13em;
+	border-radius: 10px;
+	width:30%;
 }
 #intro_1{
 	width:70%;
@@ -354,9 +367,10 @@
 	font-size: 26px;
 	background-color: rgba(30, 50 , 30 , 0.4);
 	border-radius: 20px;
-	color:white;
 }
-
+.reveal a{
+	color:#f7f2d3;
+}
 
 .amcharts-chart-div a{
 	visibility: hidden;
@@ -369,11 +383,15 @@
 }	
 #chart1_p{
 	position: relative;
-	top:-4em;
+	top:-4.2em;
 	left:-6em;
 	font-weight: 600;
 	font-size: 0.4em;
 	color:rgba(6 , 10 , 86 , 0.8);
+}
+#chart1_p2{
+	font-weight:900; 
+	color:rgba(6 , 10 , 86 , 1);
 }
 #chart_gdp {
 	border-radius: 20px;
@@ -381,17 +399,42 @@
 	height: 15em;
 	background-color: rgba(230, 250 , 230 , 0.5);
 }
+#chart_gdp_p {
+	position: relative;
+	top:-4.2em;
+	left:22em;
+	font-weight: 600;
+	font-size: 0.4em;
+	color:rgba(6 , 10 , 86 , 1);
+}
 #chart_life {
 	border-radius: 20px;
 	width: 100%;
 	height: 15em;
 	background-color: rgba(250, 250 , 230 , 0.6);
-}		
+}	
+#chart_life_p {
+	position: relative;
+	top:-4.2em;
+	left:22em;
+	font-weight: 600;
+	font-size: 0.4em;
+	color:rgba(6 , 10 , 86 , 1);
+}
+
 #chart_suicide {
 	border-radius: 20px;
 	width: 100%;
 	height: 15em;
 	background-color: rgba(230, 250 , 230 , 0.1);
+}
+#chart_suicide_p {
+	position: relative;
+	top:-4.2em;
+	left:22em;
+	font-weight: 600;
+	font-size: 0.4em;
+	color:white;
 }
 
 #chart_highlight {
