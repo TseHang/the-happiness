@@ -40,6 +40,7 @@
 	position: relative;
 	font-weight: 900;
 	font-size: 2.5em;
+	left:0.2em;
 	top:0.5em;
 }
 #p0_2{
@@ -69,7 +70,7 @@
 	color:white;
 	font-weight: 100;
 	font-size: 0.6em;
-	left:58em;
+	left:57em;
 	top:13em;
 	border-radius: 10px;
 	width:30%;
@@ -357,7 +358,7 @@
 	font-weight: 900;
 }
 #p21_2{
-	opacity:0;
+	opacity:1;
 	font-weight: 700;
 	font-family: 'Dancing Script', cursive;
 	position: relative;
@@ -368,6 +369,19 @@
 	background-color: rgba(30, 50 , 30 , 0.4);
 	border-radius: 20px;
 }
+#p21_sub{
+	opacity:1;
+	position: relative;
+	width:70%;
+	top:14em;
+	left:-19em;
+	font-size: 17px;
+	color:#f7f2d3;
+	background-color: rgba(30, 50 , 30 , 0.4);
+	border-radius: 20px;
+}
+
+
 .reveal a{
 	color:#f7f2d3;
 }
